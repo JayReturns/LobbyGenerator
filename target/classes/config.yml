@@ -1,0 +1,36 @@
+# LobbyGenerator
+
+no-permissions: "&cYou don''t have permissions to do that!"
+usage: "Usage: &c/%COMMAND% <Seed|tp> [Name]"
+wrong-seed: "&cSeed &e%SEED% &cis invalid. It has to be a number!"
+wrong-environment: "&cWrong environment set in config: %ENVIRONMENT%"
+wrong-world-type: "&cWrong world type set in config: %WORLD-TYPE%"
+pre-world-generation: "&aGenerating new lobby world &e%NAME%&a. This may take a while."
+post-world-generation: "&2Finished!"
+invalid-world: "&cInvalid world name: &e%WORLD%"
+no-player: "&cYou''re not a player!"
+successfull-teleport: "&aTeleported to world &e%WORLD%"
+config-reload: "&aSuccessfully reloaded the configuration file"
+loading-schematic: "&3Pasting schematic &b%SCHEMATIC% &3into &b%NAME%"
+file-not-found: "&e%FILENAME% &cnot found. Aborting"
+wrong-offset: "&cOffset wrongly configured in config.yml. It must have exactly 3 values. (x, y, z)"
+error: "&4An error occured: &c%ERROR%"
+
+# Should the world generate structures?
+generate-structures: true
+# Environement-type: NORMAL, NETHER, THE_END
+environment: NORMAL
+# WorldType: NORMAL, FLAT, VERSION_1_1, LARGE_BIOMES, AMPLIFIED
+world-type: NORMAL
+
+# True: Get the .schem file from the WorldEdit\schematics folder
+# False: Get the .schem file from the plugin directory
+use-worldedit-folder: true
+# Use //copy -e to copy the Lobby with Entitys (Holograms). Then /schem save <filename>
+# Put <filename> into schematic-name
+schematic-name: lobby.schem
+# Offset for the pasted schematic. (x, y, z)
+offset:
+  - 0
+  - 0
+  - 0

@@ -1,0 +1,18 @@
+main: com.jayreturns.lobbygenerator.LobbyGenerator
+name: LobbyGenerator
+version: ${project.version}
+author: JayReturns
+api-version: '1.15'
+depend:
+- WorldEdit
+commands:
+  generateworld:
+    description: Generate a new world with lobby
+    usage: /generateworld <seed|tp> [name]
+    permission: lobbygenerator.use
+    aliases: [lobbygenerator]
+  reloadgeneratorconfig:
+    description: Reload the config.yml
+    usage: /reloadgeneratorconfig
+    permission: lobbygenerator.reload
+    aliases: [rlgenconfig, rlgenconf, rlgeneratorconfig]
